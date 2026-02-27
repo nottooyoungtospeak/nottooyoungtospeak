@@ -11,9 +11,10 @@
 <body>
 
 <!-- ══ NAV ══ -->
+
 <nav>
   <div class="nav-logo-wrap">
-    <img src="logo.png" alt="Logo" class="nav-logo-img"/>
+    <img src="logo.png" alt="Logo" class="nav-logo-img" onerror="this.style.display='none'"/>
     <span class="nav-logo-text">Not Too Young To Speak</span>
   </div>
   <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
@@ -23,79 +24,55 @@
     <li><a href="#" onclick="showPage('story')" id="nav-story">Our Story</a></li>
     <li><a href="#" onclick="showPage('description')" id="nav-description">Platform</a></li>
     <li><a href="#" onclick="showPage('contact')" id="nav-contact">Contact</a></li>
+    <li class="nav-game-link"><a href="#" onclick="showPage('game')" id="nav-game">🎮 Quiz Game</a></li>
   </ul>
 </nav>
 
-<!-- ══════════════ PAGE 1: HOME ══════════════ -->
+<!-- ════════════════ PAGE 1: HOME ════════════════ -->
 <div id="home" class="page active">
   <div class="home-hero">
-    <!-- decorative circles -->
     <div class="hero-circle-1"></div>
     <div class="hero-circle-2"></div>
     <div class="hero-circle-3"></div>
-
     <div class="home-hero-content">
       <div class="hero-badge"><span>📣</span> Youth Advocacy · Cebu, Philippines</div>
-      <h1 class="hero-h1">
-        We Are<br>
-        <span class="script">Not too young</span>
-        <span class="speak">to speak.</span>
-      </h1>
+      <h1 class="hero-h1">We Are<br><span class="script">Not too young</span><span class="speak">to speak.</span></h1>
       <p class="hero-tagline">✦ Raise Your Voice. Be Heard. ✦</p>
       <p class="hero-sub">Across the Philippines, young voices are dismissed as "immature" or "uninformed." We are here to dismantle that myth — and build a space where the youth are valued, heard, and respected.</p>
       <div class="hero-actions">
-        <a class="btn btn-blue" href="http://127.0.0.1:5500/group2pg2.html">Click To Play A Game ✦</a>
-        <button class="btn btn-pink" onclick="showPage('contact')">Get Involved 💬</button>
+        <button class="btn btn-blue" onclick="showPage('purpose')">Our Purpose ✦</button>
+        <button class="btn btn-pink" onclick="showPage('game')">🎮 Play Quiz</button>
       </div>
     </div>
-
     <div class="home-hero-logo">
-      <!-- floating stars around logo -->
       <div class="deco-star" style="top:-20px;right:20px;animation-delay:0s;">⭐</div>
       <div class="deco-star" style="top:40px;left:-10px;animation-delay:0.8s;">✦</div>
       <div class="deco-star" style="bottom:20px;right:10px;animation-delay:1.4s;">🌸</div>
       <div class="deco-star" style="bottom:-10px;left:30px;animation-delay:0.5s;">💫</div>
-      <img src="logo.png" alt="Not Too Young To Speak Logo"/>
+      <img src="logo.png" alt="Not Too Young To Speak Logo" onerror="this.style.display='none'"/>
     </div>
   </div>
 
   <div class="stat-strip">
-    <div class="stat-item">
-      <div class="stat-num">60%+</div>
-      <div class="stat-label">Of young Filipinos feel their opinions are ignored in community decisions</div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-num">2</div>
-      <div class="stat-label">Digital platforms dedicated to amplifying youth voices nationwide</div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-num">1 💛</div>
-      <div class="stat-label">Clear mission: Make every young voice count — now, not later</div>
-    </div>
+    <div class="stat-item"><div class="stat-num">60%+</div><div class="stat-label">Of young Filipinos feel their opinions are ignored in community decisions</div></div>
+    <div class="stat-item"><div class="stat-num">2</div><div class="stat-label">Digital platforms dedicated to amplifying youth voices nationwide</div></div>
+    <div class="stat-item"><div class="stat-num">1 💛</div><div class="stat-label">Clear mission: Make every young voice count — now, not later</div></div>
   </div>
 
   <div class="mv-section">
-    <div class="mv-card mission">
-      <div class="mv-icon">🎯</div>
-      <p class="mv-lbl">Our Mission</p>
-      <p class="mv-text">To give awareness to this concern and provide young people a place where their voices are valued, heard, and respected.</p>
-    </div>
-    <div class="mv-card vision">
-      <div class="mv-icon">🌅</div>
-      <p class="mv-lbl">Our Vision</p>
-      <p class="mv-text">To see a society in which youths are free to speak without being judged and discriminated against.</p>
-    </div>
+    <div class="mv-card mission"><div class="mv-icon">🎯</div><p class="mv-lbl">Our Mission</p><p class="mv-text">To give awareness to this concern and provide young people a place where their voices are valued, heard, and respected.</p></div>
+    <div class="mv-card vision"><div class="mv-icon">🌅</div><p class="mv-lbl">Our Vision</p><p class="mv-text">To see a society in which youths are free to speak without being judged and discriminated against.</p></div>
   </div>
 
   <div class="feature-strip">
     <div class="feature-img">
-      <img src="https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?w=900&q=80" alt="Youth speaking up"/>
+      <img src="https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?w=900&q=80" alt="Youth speaking"/>
       <div class="feature-img-overlay"></div>
     </div>
     <div class="feature-txt">
       <p class="section-tag">Why This Matters</p>
       <h2>Youth Are Stakeholders, Not Spectators 🌟</h2>
-      <p>Young people inherit the consequences of today's decisions on climate, justice, and the economy. Dismissing their voices isn't just unfair — it is a failure of civic responsibility. When given the platform, youth don't just speak — they lead, inspire, and change the world.</p>
+      <p>Young people inherit the consequences of today's decisions. Dismissing their voices isn't just unfair — it is a failure of civic responsibility. When given the platform, youth don't just speak — they lead, inspire, and change the world.</p>
     </div>
   </div>
 
@@ -104,30 +81,27 @@
       <div class="art-ref-icon">📖</div>
       <div>
         <h3>Anti-Ageism: Breaking the Barriers of Youth Silencing — Padigos (2022)</h3>
-        <p>This foundational article shares personal experiences of being doubted and dismissed despite successfully leading school projects and community programs. It proves that "ageism" is a myth — and that when given the chance, young people can lead, inspire, and create meaningful change. No one should ever be discouraged from speaking, no matter how young they are.</p>
+        <p>This foundational article shares personal experiences of being doubted and dismissed despite successfully leading school projects and community programs. It proves that "ageism" is a myth — and that when given the chance, young people can lead, inspire, and create meaningful change.</p>
       </div>
     </div>
   </div>
 </div>
 
-<!-- ══════════════ PAGE 2: PURPOSE ══════════════ -->
+<!-- ════════════════ PAGE 2: PURPOSE ════════════════ -->
 <div id="purpose" class="page">
   <div class="purpose-hero">
-    <div class="purpose-hero-img">
-      <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=1600&q=80" alt="Youth leadership"/>
-    </div>
+    <div class="purpose-hero-img"><img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=1600&q=80" alt="Youth leadership"/></div>
     <div class="purpose-hero-text">
       <p class="section-tag">Section II — Purpose</p>
       <h1>The Problem &amp; The <em>Purpose</em> Behind Us</h1>
     </div>
   </div>
-
   <div class="purpose-body">
     <div class="prob-col">
       <p class="section-tag">The "Maturity" Myth</p>
       <div class="divider"></div>
       <h2>Why Youth Voices Get Silenced 🔇</h2>
-      <p>The primary challenge facing the youth today is the misconception that their advocacy is merely a form of rebellion. When young people speak up about climate change, social justice, or economic policy, their input is often dismissed.</p>
+      <p>The primary challenge facing the youth today is the misconception that their advocacy is merely a form of rebellion. When young people speak up about climate change, social justice, or economic policy, their input is dismissed.</p>
       <p>This dismissal ignores a critical reality: young people are not just leaders of tomorrow; they are <strong>active stakeholders of today</strong> who will inherit the long-term consequences of current decisions.</p>
       <p>Our project seeks to dismantle the stigma of "rebellion" and replace it with the framework of responsibility. Taking an interest in societal issues is an act of civic duty — not an act of defiance.</p>
       <button class="btn btn-blue" onclick="showPage('story')" style="margin-top:1.5rem;">Read Our Story →</button>
@@ -135,36 +109,22 @@
     <div class="quote-card">
       <p class="quote-card-text">"You'll understand when you're older."</p>
       <p class="quote-card-cite">— The dismissal young people hear every day</p>
-      <p class="quote-card-sub">This sentence has silenced countless generations of capable, passionate, civic-minded young people. We refuse to accept it as a valid response to genuine concern.</p>
+      <p class="quote-card-sub">This sentence has silenced countless generations of capable, passionate young people. We refuse to accept it as a valid response to genuine concern.</p>
     </div>
   </div>
-
   <div class="img-mosaic">
-    <div class="mosaic-cell">
-      <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=700&q=80" alt="Youth discussion"/>
-      <div class="mosaic-overlay"><span class="mosaic-cap">Community Dialogue</span></div>
-    </div>
-    <div class="mosaic-cell">
-      <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=700&q=80" alt="Workshop"/>
-      <div class="mosaic-overlay"><span class="mosaic-cap">Empowerment</span></div>
-    </div>
-    <div class="mosaic-cell">
-      <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=700&q=80" alt="Youth"/>
-      <div class="mosaic-overlay"><span class="mosaic-cap">Resilience</span></div>
-    </div>
-    <div class="mosaic-cell">
-      <img src="https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?w=700&q=80" alt="Speaking"/>
-      <div class="mosaic-overlay"><span class="mosaic-cap">Speaking Up</span></div>
-    </div>
+    <div class="mosaic-cell"><img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=700&q=80" alt="Youth"/><div class="mosaic-overlay"><span class="mosaic-cap">Community Dialogue</span></div></div>
+    <div class="mosaic-cell"><img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=700&q=80" alt="Workshop"/><div class="mosaic-overlay"><span class="mosaic-cap">Empowerment</span></div></div>
+    <div class="mosaic-cell"><img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=700&q=80" alt="Youth"/><div class="mosaic-overlay"><span class="mosaic-cap">Resilience</span></div></div>
+    <div class="mosaic-cell"><img src="https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?w=700&q=80" alt="Speaking"/><div class="mosaic-overlay"><span class="mosaic-cap">Speaking Up</span></div></div>
   </div>
-
   <div class="manifesto-band">
     <h2>✦ Our Commitment ✦</h2>
     <p>By leveraging digital platforms, we aim to bridge the gap between generational perspectives and provide a <strong>professional, evidence-based space</strong> for youth-led discourse. When given the right platform, the youth are not just loud — they are <strong>indispensable</strong>.</p>
   </div>
 </div>
 
-<!-- ══════════════ PAGE 3: STORY ══════════════ -->
+<!-- ════════════════ PAGE 3: STORY ════════════════ -->
 <div id="story" class="page">
   <div class="story-hero">
     <div class="story-hero-left">
@@ -174,131 +134,62 @@
       <p>We saw this problem firsthand. So we decided to do something about it — not with anger, but with evidence, professionalism, and purpose rooted in the belief that civic participation is everyone's right.</p>
       <button class="btn btn-pink" onclick="showPage('description')" style="margin-top:1rem;">See Our Platform 🌐</button>
     </div>
-    <div class="story-hero-right">
-      <img src="https://images.unsplash.com/photo-1607748862156-7c548e7e98f4?w=900&q=80" alt="Youth leaders"/>
-    </div>
+    <div class="story-hero-right"><img src="https://images.unsplash.com/photo-1607748862156-7c548e7e98f4?w=900&q=80" alt="Youth leaders"/></div>
   </div>
-
   <div class="values-section">
-    <div class="sec-header">
-      <p class="section-tag" style="justify-content:center;">What We Stand For</p>
-      <h2>✦ Our Core Values ✦</h2>
-    </div>
+    <div class="sec-header"><p class="section-tag" style="justify-content:center;">What We Stand For</p><h2>✦ Our Core Values ✦</h2></div>
     <div class="values-grid">
-      <div class="value-card">
-        <div class="value-emoji">🤝</div>
-        <div class="value-title">Inclusion</div>
-        <p class="value-text">Every young voice deserves to be heard — regardless of background, economic status, or school. We build spaces that welcome all youth.</p>
-      </div>
-      <div class="value-card">
-        <div class="value-emoji">📊</div>
-        <div class="value-title">Evidence</div>
-        <p class="value-text">We back our advocacy with research, data, and real experiences. Youth perspectives are informed, lived realities that deserve weight.</p>
-      </div>
-      <div class="value-card">
-        <div class="value-emoji">🌸</div>
-        <div class="value-title">Respect</div>
-        <p class="value-text">We engage across generations with civility. We don't fight ageism with hostility — we dismantle it through consistent, dignified dialogue.</p>
-      </div>
-      <div class="value-card">
-        <div class="value-emoji">⭐</div>
-        <div class="value-title">Responsibility</div>
-        <p class="value-text">Speaking up isn't rebellion — it is civic duty. Being engaged is the most responsible thing a young person can do in their community.</p>
-      </div>
-      <div class="value-card">
-        <div class="value-emoji">💪</div>
-        <div class="value-title">Empowerment</div>
-        <p class="value-text">We create tools and content that give young people the confidence to participate in public life meaningfully and effectively.</p>
-      </div>
-      <div class="value-card">
-        <div class="value-emoji">🦋</div>
-        <div class="value-title">Courage</div>
-        <p class="value-text">Speaking when you've been told to stay quiet takes courage. We celebrate every young person who chooses to raise their voice.</p>
-      </div>
+      <div class="value-card"><div class="value-emoji">🤝</div><div class="value-title">Inclusion</div><p class="value-text">Every young voice deserves to be heard — regardless of background, economic status, or school.</p></div>
+      <div class="value-card"><div class="value-emoji">📊</div><div class="value-title">Evidence</div><p class="value-text">We back our advocacy with research, data, and real experiences that deserve weight in public discourse.</p></div>
+      <div class="value-card"><div class="value-emoji">🌸</div><div class="value-title">Respect</div><p class="value-text">We engage across generations with civility, dismantling ageism through consistent, dignified dialogue.</p></div>
+      <div class="value-card"><div class="value-emoji">⭐</div><div class="value-title">Responsibility</div><p class="value-text">Speaking up isn't rebellion — it is civic duty and the most responsible thing a young person can do.</p></div>
+      <div class="value-card"><div class="value-emoji">💪</div><div class="value-title">Empowerment</div><p class="value-text">We create tools and content that give young people confidence to participate in public life meaningfully.</p></div>
+      <div class="value-card"><div class="value-emoji">🦋</div><div class="value-title">Courage</div><p class="value-text">Speaking when told to be quiet takes courage. We celebrate every young person who raises their voice.</p></div>
     </div>
   </div>
-
   <div class="ageism-section">
-    <div class="ageism-img">
-      <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=900&q=80" alt="Students"/>
-    </div>
+    <div class="ageism-img"><img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=900&q=80" alt="Students"/></div>
     <div class="ageism-text">
       <p class="section-tag">Anti-Ageism</p>
       <div class="divider"></div>
       <h2>The Article That Inspired Us 📖</h2>
-      <p>The article <em>"Anti-Ageism: Breaking the Barriers of Youth Silencing"</em> by Padigos (2022) shares powerful personal experiences of being doubted and dismissed despite successfully leading school projects and community programs.</p>
-      <p>It highlights how youth voices are frequently dismissed as "too young" even when their ideas are effective and their contributions are real and measurable.</p>
+      <p>The article <em>"Anti-Ageism: Breaking the Barriers of Youth Silencing"</em> by Padigos (2022) shares powerful personal experiences of being doubted and dismissed despite successfully leading school projects.</p>
       <p>The article proves: when given the chance, young people can lead, inspire, and <em>create meaningful change</em>. Ageism is a myth — and we are proof every day.</p>
     </div>
   </div>
 </div>
 
-<!-- ══════════════ PAGE 4: PLATFORM ══════════════ -->
+<!-- ════════════════ PAGE 4: PLATFORM ════════════════ -->
 <div id="description" class="page">
   <div class="desc-header">
     <p class="section-tag" style="justify-content:center;">Section III — Description</p>
     <h1>Our Dual-Platform Approach 🌐</h1>
-    <p>Too often, young people's ideas are labeled "immature," leaving them sidelined in conversations that affect them most. We're changing that by meeting youth where they are: online.</p>
+    <p>Too often, young people's ideas are labeled "immature," leaving them sidelined. We're changing that by meeting youth where they are: online.</p>
   </div>
-
   <div class="platform-section">
     <p class="section-tag" style="justify-content:center;">Our Platforms</p>
     <h2>Two spaces. One voice. Limitless impact. ✨</h2>
     <div class="platform-cards">
       <div class="p-card">
-        <div class="p-card-img">
-          <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=800&q=80" alt="Social media"/>
-          <div class="p-card-img-overlay"></div>
-        </div>
-        <div class="p-card-body">
-          <div class="p-card-icon">📘</div>
-          <div class="p-card-role">Pulse Center</div>
-          <div class="p-card-name">Facebook Page</div>
-          <p class="p-card-desc">Our real-time engagement hub hosting opinion polls, digestible "Youth Takes" on current events, and high-impact quote graphics designed to spark constructive dialogue across communities in the Philippines.</p>
-        </div>
+        <div class="p-card-img"><img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=800&q=80" alt="Social media"/><div class="p-card-img-overlay"></div></div>
+        <div class="p-card-body"><div class="p-card-icon">📘</div><div class="p-card-role">Pulse Center</div><div class="p-card-name">Facebook Page</div><p class="p-card-desc">Our real-time hub hosting opinion polls, "Youth Takes" on current events, and high-impact quote graphics designed to spark constructive dialogue across communities.</p></div>
       </div>
       <div class="p-card">
-        <div class="p-card-img">
-          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&q=80" alt="Website"/>
-          <div class="p-card-img-overlay"></div>
-        </div>
-        <div class="p-card-body">
-          <div class="p-card-icon">🌐</div>
-          <div class="p-card-role">Intellectual Hub</div>
-          <div class="p-card-name">Official Website</div>
-          <p class="p-card-desc">Our long-form platform featuring youth-written essays, research-backed articles, and advocacy explainers that provide the depth and data necessary to support our claims — and change minds at every level.</p>
-        </div>
+        <div class="p-card-img"><img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&q=80" alt="Website"/><div class="p-card-img-overlay"></div></div>
+        <div class="p-card-body"><div class="p-card-icon">🌐</div><div class="p-card-role">Intellectual Hub</div><div class="p-card-name">Official Website</div><p class="p-card-desc">Long-form essays, youth-written articles, and advocacy explainers backed by data and research to change minds at every level.</p></div>
       </div>
     </div>
   </div>
-
   <div class="content-section">
     <p class="section-tag" style="justify-content:center;">What We Publish</p>
     <h2>Content That Makes Youth Voices Undeniable 💬</h2>
     <div class="content-list">
-      <div class="c-item">
-        <div class="c-icon">📊</div>
-        <div class="c-label">Opinion Polls</div>
-        <p class="c-desc">Real-time surveys on issues that affect Filipino youth today</p>
-      </div>
-      <div class="c-item">
-        <div class="c-icon">✍️</div>
-        <div class="c-label">Youth Takes</div>
-        <p class="c-desc">Short, punchy commentary on current events written by young people</p>
-      </div>
-      <div class="c-item">
-        <div class="c-icon">📰</div>
-        <div class="c-label">Long-Form Essays</div>
-        <p class="c-desc">Evidence-based articles proving youth can do serious intellectual work</p>
-      </div>
-      <div class="c-item">
-        <div class="c-icon">📣</div>
-        <div class="c-label">Advocacy Graphics</div>
-        <p class="c-desc">High-impact quote cards and infographics designed to inspire and spread</p>
-      </div>
+      <div class="c-item"><div class="c-icon">📊</div><div class="c-label">Opinion Polls</div><p class="c-desc">Real-time surveys on issues that affect Filipino youth today</p></div>
+      <div class="c-item"><div class="c-icon">✍️</div><div class="c-label">Youth Takes</div><p class="c-desc">Short, punchy commentary on current events written by young people</p></div>
+      <div class="c-item"><div class="c-icon">📰</div><div class="c-label">Long-Form Essays</div><p class="c-desc">Evidence-based articles proving youth can do serious intellectual work</p></div>
+      <div class="c-item"><div class="c-icon">📣</div><div class="c-label">Advocacy Graphics</div><p class="c-desc">High-impact quote cards and infographics designed to inspire and spread</p></div>
     </div>
   </div>
-
   <div class="cta-band">
     <h2>Ready to Make Your Voice Heard? 📢</h2>
     <p>Join us. Contribute. Speak up. You are not too young.</p>
@@ -306,46 +197,25 @@
   </div>
 </div>
 
-<!-- ══════════════ PAGE 5: CONTACT ══════════════ -->
+<!-- ════════════════ PAGE 5: CONTACT ════════════════ -->
 <div id="contact" class="page">
   <div class="contact-hero">
-    <div class="contact-hero-bg">
-      <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=1600&q=80" alt="Team"/>
-    </div>
+    <div class="contact-hero-bg"><img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=1600&q=80" alt="Team"/></div>
     <div class="contact-hero-text">
-      <div class="contact-hero-logo"><img src="logo.png" alt="Logo"/></div>
+      <div class="contact-hero-logo"><img src="logo.png" alt="Logo" onerror="this.style.display='none'"/></div>
       <p class="section-tag" style="justify-content:center;">Section IV — Contact Information</p>
       <h1>Get In Touch With Us 💌</h1>
     </div>
   </div>
-
   <div class="contact-body">
     <div class="contact-info">
       <p class="section-tag">Reach Out</p>
       <h2>For More Information &amp; Details</h2>
-      <p>We welcome collaborators, advocates, educators, and anyone who believes young people deserve a seat at the table. Reach out through any channel below — we would love to hear from you.</p>
+      <p>We welcome collaborators, advocates, educators, and anyone who believes young people deserve a seat at the table. Reach out through any channel below.</p>
       <div class="contact-cards">
-        <div class="c-card">
-          <div class="c-card-icon">📞</div>
-          <div>
-            <div class="c-card-label">Phone Number</div>
-            <div class="c-card-val">09937335886</div>
-          </div>
-        </div>
-        <div class="c-card">
-          <div class="c-card-icon">✉️</div>
-          <div>
-            <div class="c-card-label">Email Address</div>
-            <div class="c-card-val">nottooyoungtospeak@gmail.com</div>
-          </div>
-        </div>
-        <div class="c-card">
-          <div class="c-card-icon">👥</div>
-          <div>
-            <div class="c-card-label">Facebook Page</div>
-            <div class="c-card-val">Nottoo Young To Speak</div>
-          </div>
-        </div>
+        <div class="c-card"><div class="c-card-icon">📞</div><div><div class="c-card-label">Phone Number</div><div class="c-card-val">09937335886</div></div></div>
+        <div class="c-card"><div class="c-card-icon">✉️</div><div><div class="c-card-label">Email Address</div><div class="c-card-val">nottooyoungtospeak@gmail.com</div></div></div>
+        <div class="c-card"><div class="c-card-icon">👥</div><div><div class="c-card-label">Facebook Page</div><div class="c-card-val">Nottoo Young To Speak</div></div></div>
       </div>
       <div class="location-box">
         <p class="section-tag" style="justify-content:center;">📍 Based In</p>
@@ -353,39 +223,366 @@
         <p class="loc-sub">Serving youth voices across the entire Philippines 🇵🇭</p>
       </div>
     </div>
-
     <div class="contact-visual">
       <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=900&q=80" alt="Youth community"/>
       <div class="contact-visual-overlay"></div>
     </div>
   </div>
+  <div class="ref-bar"><strong>Reference:</strong> Padigos, J. M. G. (2022). Anti-ageism: Breaking the barriers of youth silencing. Juan Macaraeg National High School.</div>
+  <footer><span class="footer-logo">Not Too Young To Speak ✦</span><span>© 2025 · Cebu, Philippines · Youth Advocacy Platform 🌸</span></footer>
+</div>
 
-  <div class="ref-bar">
-    <strong>Reference:</strong> Padigos, J. M. G. (2022). Anti-ageism: Breaking the barriers of youth silencing. Juan Macaraeg National High School.
+<!-- ════════════════ PAGE 6: QUIZ GAME ════════════════ -->
+<div id="game" class="page">
+  <div class="game-particles" id="gameParticles"></div>
+  <div class="game-wrap">
+
+    <!-- START SCREEN -->
+    <div class="gscreen active" id="gstart">
+      <div class="gcard" style="text-align:center;">
+        <img src="logo.png" alt="Logo" class="game-logo-img" onerror="this.style.display='none'"/>
+        <div class="game-title-big">Speak Up! 📣</div>
+        <div class="game-sub-lbl">Youth Advocacy Quiz</div>
+        <div class="game-tagline-txt">✦ Raise Your Voice. Be Heard. ✦</div>
+        <p class="game-desc-txt">Test your knowledge on youth rights, ageism, civic participation, and the power of speaking up! Every correct answer is a step toward a world where youth voices are heard. 🌸</p>
+        <p style="font-size:0.78rem;font-weight:700;color:var(--textlight);text-transform:uppercase;letter-spacing:0.15em;margin-bottom:0.8rem;">Choose Difficulty</p>
+        <div class="diff-row">
+          <button class="gdiff easy gselected" onclick="gSetDiff(this,'easy')">🌱 Easy</button>
+          <button class="gdiff medium" onclick="gSetDiff(this,'medium')">🌟 Medium</button>
+          <button class="gdiff hard" onclick="gSetDiff(this,'hard')">🔥 Hard</button>
+        </div>
+        <div class="gstart-stats">
+          <div class="gpill"><span>❓</span><span id="g-q-count">10 Questions</span></div>
+          <div class="gpill"><span>⏱️</span><span id="g-time-lbl">20 sec/question</span></div>
+          <div class="gpill"><span>⭐</span> Earn Stars</div>
+        </div>
+        <button class="gbtn gbtn-blue" onclick="gStartGame()" style="width:100%;font-size:1.1rem;">Let's Play! ✦</button>
+      </div>
+    </div>
+
+    <!-- QUIZ SCREEN -->
+    <div class="gscreen" id="gquiz">
+      <div class="gcard">
+        <div class="quiz-topbar">
+          <div class="qprogress-wrap">
+            <div class="qnum-lbl" id="g-qnum">Question 1 of 10</div>
+            <div class="qprog-bg"><div class="qprog-fill" id="g-prog" style="width:10%"></div></div>
+          </div>
+          <div class="qtimer-wrap">
+            <div class="qtimer-circle" id="g-timer-circle"><span class="qtimer-num" id="g-timer-num">20</span></div>
+            <div class="qtimer-lbl">secs</div>
+          </div>
+          <div class="qscore-badge">⭐ <span id="g-score">0</span></div>
+        </div>
+        <div class="qcat-tag" id="g-cat">📚 Category</div>
+        <div class="qtext" id="g-qtext">Loading...</div>
+        <div class="opts-grid" id="g-opts"></div>
+        <div class="gfeedback" id="g-feedback"></div>
+        <div class="gnext-row"><button class="gbtn gbtn-blue gbtn-sm" id="g-next" onclick="gNextQ()" style="display:none;">Next →</button></div>
+      </div>
+    </div>
+
+    <!-- RESULT SCREEN -->
+    <div class="gscreen" id="gresult">
+      <div class="gcard" style="text-align:center;">
+        <div class="gresult-trophy" id="g-trophy">🏆</div>
+        <div class="gresult-title" id="g-rtitle">Amazing!</div>
+        <div class="gresult-msg" id="g-rmsg">You are truly Not Too Young To Speak!</div>
+        <div class="gscore-ring-wrap">
+          <div class="gscore-ring" id="g-ring">
+            <div class="gscore-ring-inner">
+              <div class="gscore-big" id="g-final-score">0</div>
+              <div class="gscore-total">points</div>
+            </div>
+          </div>
+        </div>
+        <div class="gresult-stats">
+          <div class="grstat"><div class="grstat-num" id="g-rc">0</div><div class="grstat-lbl">✅ Correct</div></div>
+          <div class="grstat"><div class="grstat-num" id="g-rw">0</div><div class="grstat-lbl">❌ Wrong</div></div>
+          <div class="grstat"><div class="grstat-num" id="g-rs">0</div><div class="grstat-lbl">🔥 Best Streak</div></div>
+        </div>
+        <div class="gresult-quote">
+          <div class="gresult-quote-icon">💬</div>
+          <div class="gresult-quote-text" id="g-rquote">"Your voice matters."</div>
+          <div class="gresult-quote-attr" id="g-rqattr">Not Too Young To Speak</div>
+        </div>
+        <div class="gresult-actions">
+          <button class="gbtn gbtn-blue" onclick="gRestart()">Play Again 🔄</button>
+          <button class="gbtn gbtn-outline" onclick="gOpenReview()">Review Answers 📋</button>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /game-wrap -->
+</div><!-- /game page -->
+
+<!-- STREAK BADGE -->
+<div class="gstreak-badge" id="g-streak-badge">
+  <div class="gstreak-fire" id="g-streak-fire">🔥</div>
+  <div class="gstreak-txt" id="g-streak-txt">3x Streak!</div>
+</div>
+
+<!-- REVIEW MODAL -->
+<div class="gmodal-bg" id="g-modal">
+  <div class="gmodal">
+    <button class="gmodal-close" onclick="gCloseReview()">✕</button>
+    <h2>📋 Answer Review</h2>
+    <div id="g-review-content"></div>
   </div>
-
-  <footer>
-    <span class="footer-logo">Not Too Young To Speak ✦</span>
-    <span>© 2025 · Cebu, Philippines · Youth Advocacy Platform 🌸</span>
-  </footer>
 </div>
 
 <script>
-  function showPage(id) {
-    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-    document.getElementById(id).classList.add('active');
-    document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
-    const el = document.getElementById('nav-' + id);
-    if (el) el.classList.add('active');
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-    document.getElementById('navLinks').classList.remove('open');
+/* ════════════════════════════════
+   SITE NAVIGATION
+════════════════════════════════ */
+function showPage(id) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+  const el = document.getElementById('nav-' + id);
+  if (el) el.classList.add('active');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+  document.getElementById('navLinks').classList.remove('open');
+  // init particles when game page opens
+  if (id === 'game' && !window._gParticlesCreated) { gCreateParticles(); window._gParticlesCreated = true; }
+}
+function toggleMenu() { document.getElementById('navLinks').classList.toggle('open'); }
+
+/* ════════════════════════════════
+   QUIZ GAME
+════════════════════════════════ */
+const G_QUESTIONS = [
+  { diff:'easy', cat:'📢 Youth Rights', q:'What does "ageism" mean in the context of youth advocacy?', opts:['Respecting elders','Discriminating based on age','Voting rights for seniors','School age requirements'], ans:1, exp:'Ageism is discrimination based on age. For youth, this means having their ideas dismissed just because they are young.' },
+  { diff:'easy', cat:'🎤 Speaking Up', q:'According to "Not Too Young To Speak," speaking up about societal issues is an act of...', opts:['Rebellion','Civic duty','Disrespect','Immaturity'], ans:1, exp:'Advocating for change is an act of civic duty — it shows you care about your community and take responsibility seriously.' },
+  { diff:'easy', cat:'📚 Knowledge', q:'What is the tagline of the "Not Too Young To Speak" advocacy?', opts:['Youth First!','Raise Your Voice. Be Heard.','Speak Now or Never','Change Starts With You'], ans:1, exp:'"Raise Your Voice. Be Heard." captures the mission of empowering youth to participate in civic discussions.' },
+  { diff:'easy', cat:'🌍 Advocacy', q:'Where is the "Not Too Young To Speak" advocacy based?', opts:['Manila','Davao','Cebu','Iloilo'], ans:2, exp:'The advocacy is based in Cebu, Philippines, serving youth voices across the entire country.' },
+  { diff:'easy', cat:'📱 Platform', q:'Which platform serves as the "Pulse Center" for the advocacy?', opts:['Twitter/X','Instagram','TikTok','Facebook Page'], ans:3, exp:'The Facebook Page serves as the "Pulse Center" — hosting real-time polls, Youth Takes, and quote graphics.' },
+  { diff:'easy', cat:'💬 Dialogue', q:'What dismissive phrase do youth advocates often hear when speaking up?', opts:['"That\'s a great point!"','"We need your help!"','"You\'ll understand when you\'re older."','"Please share more."'], ans:2, exp:'"You\'ll understand when you\'re older" is a common dismissal that silences young voices.' },
+  { diff:'easy', cat:'🌸 Values', q:'Which of these is a core value of Not Too Young To Speak?', opts:['Confrontation','Silence','Inclusion','Isolation'], ans:2, exp:'Inclusion is a core value — every young voice deserves to be heard regardless of background or economic status.' },
+  { diff:'easy', cat:'📖 Reference', q:'Who wrote "Anti-Ageism: Breaking the Barriers of Youth Silencing"?', opts:['Jose Rizal','J.M.G. Padigos','Andres Bonifacio','Apolinario Mabini'], ans:1, exp:'Padigos (2022) wrote this article sharing personal experiences of being dismissed despite leading successful projects.' },
+  { diff:'easy', cat:'🏛️ Civics', q:'Young people are described as stakeholders of...', opts:['The future only','The past','Today AND the future','Only their school'], ans:2, exp:'Youth are active stakeholders of today who will inherit the long-term consequences of current decisions.' },
+  { diff:'easy', cat:'💡 Mission', q:'What is the Vision of Not Too Young To Speak?', opts:['More schools in Cebu','A society where youths speak freely without judgment','Lower voting age to 10','Youth-only government'], ans:1, exp:'The Vision is to see a society where youths are free to speak without being judged or discriminated against.' },
+  { diff:'medium', cat:'🧠 Critical Thinking', q:'A student presents a climate policy idea at a town hall but is told "You\'re too young to understand politics." This is an example of...', opts:['Good mentoring','Youth ageism','Civic education','Policy debate'], ans:1, exp:'This is youth ageism — dismissing an idea purely based on the speaker\'s age rather than the merit of the idea itself.' },
+  { diff:'medium', cat:'📊 Platform', q:'What type of content does the Official Website primarily host?', opts:['Memes and videos','Long-form essays and advocacy explainers','Gaming content','Shopping deals'], ans:1, exp:'The website features long-form essays, youth-written articles, and advocacy explainers backed by data.' },
+  { diff:'medium', cat:'🌍 Social Issues', q:'Why is it important for youth to speak up about climate change NOW?', opts:['It helps them pass science class','They will directly inherit the long-term consequences of today\'s decisions','Adults don\'t care about it','It makes them popular online'], ans:1, exp:'Youth will directly inherit the consequences of today\'s climate decisions, making their voices essential.' },
+  { diff:'medium', cat:'💬 Rhetoric', q:'Replacing the "rebellion" narrative with the "responsibility" framework means...', opts:['Being quiet and obedient','Seeing civic engagement as duty, not defiance','Following only adult guidance','Avoiding all political topics'], ans:1, exp:'Framing advocacy as civic responsibility rather than rebellion changes how society receives youth input.' },
+  { diff:'medium', cat:'🤝 Community', q:'What is the dual-platform approach designed to do?', opts:['Sell merchandise','Bridge generational gaps and provide evidence-based space for youth discourse','Replace traditional media','Create a political party'], ans:1, exp:'The dual-platform approach bridges generational perspectives through Facebook and the website.' },
+  { diff:'medium', cat:'🔬 Research', q:'What did Padigos (2022) argue in the anti-ageism article?', opts:['Youth should wait their turn','Young people can lead and create change when given the chance','Adults are always right','Social media is harmful for youth'], ans:1, exp:'Padigos argued that ageism is a myth — young people have proven they can successfully lead and create change.' },
+  { diff:'medium', cat:'💪 Empowerment', q:'Which action best shows a young person practicing civic empowerment?', opts:['Staying silent in community meetings','Writing an evidence-based article about a local issue','Complaining without solutions','Waiting for adults to solve problems'], ans:1, exp:'Writing evidence-based content about real issues demonstrates civic empowerment.' },
+  { diff:'hard', cat:'🔥 Advanced', q:'Which philosophical concept best describes treating youth dismissal as acceptable simply because it has "always been done that way"?', opts:['Utilitarianism','Appeal to tradition fallacy','Social contract theory','Relativism'], ans:1, exp:'The "appeal to tradition" fallacy means accepting something as correct because it\'s traditional — but tradition doesn\'t equal correctness.' },
+  { diff:'hard', cat:'🏛️ Civic Theory', q:'In democratic theory, what concept directly supports the idea that youth should have voice in decisions that affect them?', opts:['Technocracy','Suffrage alone','Stakeholder participation principle','Meritocracy'], ans:2, exp:'The stakeholder participation principle holds that those affected by decisions have a right to participate in making them.' },
+  { diff:'hard', cat:'🧩 Strategy', q:'Why is a dual-platform strategy more effective than using a single platform for youth advocacy?', opts:['It costs more money','It reaches different audiences with both accessible and deep content simultaneously','Social media is more credible','Websites get more followers'], ans:1, exp:'Dual platforms maximize reach: social media captures attention, while the website provides depth and evidence.' },
+  { diff:'hard', cat:'🌐 Global Context', q:'The UN Convention on the Rights of the Child (Article 12) states that children have the right to...', opts:['Vote in elections at age 12','Express their views freely in matters affecting them','Own property independently','Refuse schooling'], ans:1, exp:'Article 12 of the UNCRC guarantees children the right to express views freely on all matters affecting them.' },
+  { diff:'hard', cat:'🔥 Advanced', q:'What rhetorical fallacy is used when an adult says "I was young once too, and I didn\'t know enough to speak on these issues"?', opts:['Ethos building','Hasty generalization / false equivalence','Logical reasoning','Pathos appeal'], ans:1, exp:'This is a false equivalence — assuming their personal past applies universally to all youth, ignoring individual differences.' },
+];
+
+const G_DIFF = { easy:{time:20,label:'20 sec/question'}, medium:{time:15,label:'15 sec/question'}, hard:{time:10,label:'10 sec/question'} };
+
+let gDiff='easy', gQs=[], gCurr=0, gScore=0, gCorrect=0, gWrong=0, gStreak=0, gBestStreak=0;
+let gTimer=null, gTimeLeft=20, gTimeMax=20, gAnswered=false, gAnswers=[];
+
+function gSetDiff(btn, d) {
+  document.querySelectorAll('.gdiff').forEach(b => b.classList.remove('gselected'));
+  btn.classList.add('gselected');
+  gDiff = d;
+  document.getElementById('g-time-lbl').textContent = G_DIFF[d].label;
+}
+
+function gShuffle(arr) {
+  const a=[...arr];
+  for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}
+  return a;
+}
+
+function gStartGame() {
+  let pool = gDiff==='easy' ? G_QUESTIONS.filter(q=>q.diff==='easy')
+           : gDiff==='medium' ? G_QUESTIONS.filter(q=>q.diff==='easy'||q.diff==='medium')
+           : [...G_QUESTIONS];
+  gQs = gShuffle(pool).slice(0,10);
+  gCurr=0; gScore=0; gCorrect=0; gWrong=0; gStreak=0; gBestStreak=0; gAnswers=[];
+  gTimeMax = G_DIFF[gDiff].time;
+  document.getElementById('g-score').textContent='0';
+  gShowScreen('gquiz'); gRenderQ();
+}
+
+function gRenderQ() {
+  gAnswered=false;
+  const q=gQs[gCurr], total=gQs.length;
+  document.getElementById('g-qnum').textContent=`Question ${gCurr+1} of ${total}`;
+  document.getElementById('g-prog').style.width=`${((gCurr+1)/total)*100}%`;
+  document.getElementById('g-cat').textContent=q.cat;
+  document.getElementById('g-qtext').textContent=q.q;
+  document.getElementById('g-next').style.display='none';
+  document.getElementById('g-feedback').className='gfeedback';
+  const grid=document.getElementById('g-opts');
+  grid.innerHTML='';
+  ['A','B','C','D'].forEach((l,i)=>{
+    const btn=document.createElement('button');
+    btn.className='opt-btn';
+    btn.innerHTML=`<span class="opt-letter">${l}</span><span>${q.opts[i]}</span>`;
+    btn.onclick=()=>gSelect(i,btn);
+    grid.appendChild(btn);
+  });
+  gStartTimer();
+}
+
+function gStartTimer() {
+  clearInterval(gTimer); gTimeLeft=gTimeMax; gUpdateTimer();
+  gTimer=setInterval(()=>{ gTimeLeft--; gUpdateTimer(); if(gTimeLeft<=0){clearInterval(gTimer);gTimeout();} },1000);
+}
+
+function gUpdateTimer() {
+  document.getElementById('g-timer-num').textContent=gTimeLeft;
+  const pct=(gTimeLeft/gTimeMax)*360;
+  const col=gTimeLeft>gTimeMax*0.5?'#5BAED6':gTimeLeft>gTimeMax*0.25?'#F9D77E':'#E87EA1';
+  document.getElementById('g-timer-circle').style.background=`conic-gradient(${col} ${pct}deg,#F8F4FF ${pct}deg)`;
+}
+
+function gTimeout() {
+  if(gAnswered)return;
+  gAnswered=true; gStreak=0; gWrong++;
+  gAnswers.push({q:gQs[gCurr],chosen:-1,correct:false});
+  const q=gQs[gCurr];
+  document.querySelectorAll('.opt-btn').forEach(b=>b.disabled=true);
+  document.querySelectorAll('.opt-btn')[q.ans].classList.add('greveal');
+  gFeedback(false,"⏰ Time's up! "+q.exp);
+  document.getElementById('g-next').style.display='inline-block';
+}
+
+function gSelect(idx,btn) {
+  if(gAnswered)return;
+  gAnswered=true; clearInterval(gTimer);
+  const q=gQs[gCurr], isOk=idx===q.ans;
+  document.querySelectorAll('.opt-btn').forEach(b=>b.disabled=true);
+  if(isOk){
+    btn.classList.add('gcorrect'); gStreak++; gCorrect++;
+    if(gStreak>gBestStreak)gBestStreak=gStreak;
+    const bonus=Math.ceil(gTimeLeft/gTimeMax*50), pts=100+bonus;
+    gScore+=pts; document.getElementById('g-score').textContent=gScore;
+    gFeedback(true,`✅ Correct! +${pts} pts 🎉 ${q.exp}`);
+    if(gStreak>=3)gShowStreak(gStreak);
+    gAnswers.push({q,chosen:idx,correct:true});
+  } else {
+    btn.classList.add('gwrong');
+    document.querySelectorAll('.opt-btn')[q.ans].classList.add('greveal');
+    gStreak=0; gWrong++;
+    gFeedback(false,`❌ Not quite! ${q.exp}`);
+    gAnswers.push({q,chosen:idx,correct:false});
   }
-  function toggleMenu() {
-    document.getElementById('navLinks').classList.toggle('open');
+  document.getElementById('g-next').style.display='inline-block';
+}
+
+function gFeedback(ok,txt) {
+  const fb=document.getElementById('g-feedback');
+  fb.textContent=txt;
+  fb.className='gfeedback '+(ok?'gfb-ok':'gfb-bad')+' gfb-on';
+}
+
+function gShowStreak(n) {
+  const badge=document.getElementById('g-streak-badge');
+  const fires=['','','','🔥','🔥🔥','🔥🔥🔥','⚡🔥⚡'];
+  document.getElementById('g-streak-fire').textContent=fires[Math.min(n,6)]||'🔥';
+  document.getElementById('g-streak-txt').textContent=`${n}x Streak!`;
+  badge.className='gstreak-badge gshow';
+  setTimeout(()=>badge.className='gstreak-badge',2500);
+}
+
+function gNextQ() {
+  gCurr++;
+  if(gCurr>=gQs.length){ gShowResults(); }
+  else { gShowScreen('gquiz'); gRenderQ(); }
+}
+
+function gShowResults() {
+  gShowScreen('gresult');
+  const pct=gCorrect/gQs.length;
+  document.getElementById('g-final-score').textContent=gScore;
+  document.getElementById('g-rc').textContent=gCorrect;
+  document.getElementById('g-rw').textContent=gWrong;
+  document.getElementById('g-rs').textContent=gBestStreak;
+  const deg=pct*360;
+  document.getElementById('g-ring').style.background=`conic-gradient(#5BAED6 ${deg}deg,#F8F4FF ${deg}deg)`;
+  const idx=Math.floor(pct*10);
+  const trophies=['😢','😅','🙂','😊','⭐','🌟','🏅','🥇','🏆','🎖️','🎊'];
+  const titles=['Keep Trying!','You Can Do It!','Getting There!','Not Bad!','Well Done!','Great Job!','Excellent!','Outstanding!','Amazing!','Perfect!','Legendary!'];
+  const msgs=['Keep learning — your voice grows stronger with knowledge! 📚','Every expert was once a beginner. Keep speaking up! 💪','You\'re on your way! Your advocacy journey has begun. 🌱','Good effort! A few more reads and you\'ll ace it. ✨','You know your stuff! Keep amplifying youth voices. 📣','Impressive! You\'re clearly passionate about this cause. 🌸','Excellent knowledge! You\'d be a great advocate. 🌟','Wow! Your understanding of youth rights is deep. ⭐','Amazing! You are truly Not Too Young To Speak! 🏆','Perfect score! You\'re a youth advocacy champion! 🎊','LEGENDARY! You ARE the voice of the youth! 🔥✨'];
+  document.getElementById('g-trophy').textContent=trophies[Math.min(idx,10)];
+  document.getElementById('g-rtitle').textContent=titles[Math.min(idx,10)]+(pct===1?' 🎉':'');
+  document.getElementById('g-rmsg').textContent=msgs[Math.min(idx,10)];
+  const quotes=[
+    {t:'"The youth of today are the leaders of tomorrow."',a:'Nelson Mandela'},
+    {t:'"You are never too young to lead. You are never too young to change the world."',a:'Not Too Young To Speak'},
+    {t:'"Raise your voice. Be heard. Your perspective matters."',a:'Not Too Young To Speak'},
+    {t:'"Taking an interest in societal issues is an act of civic duty, not an act of defiance."',a:'NTTYS Advocacy'},
+    {t:'"When given the chance, young people can lead, inspire, and create meaningful change."',a:'Padigos, 2022'},
+  ];
+  const rq=quotes[Math.floor(Math.random()*quotes.length)];
+  document.getElementById('g-rquote').textContent=rq.t;
+  document.getElementById('g-rqattr').textContent='— '+rq.a;
+  if(pct>=0.7)gConfetti();
+}
+
+function gConfetti() {
+  const colors=['#5BAED6','#E87EA1','#F9D77E','#7BC8A4','#C3A8D1','#FBBF8C'];
+  for(let i=0;i<60;i++){
+    setTimeout(()=>{
+      const c=document.createElement('div');
+      c.className='gconfetti';
+      c.style.left=Math.random()*100+'vw';
+      c.style.background=colors[Math.floor(Math.random()*colors.length)];
+      c.style.width=(Math.random()*10+6)+'px'; c.style.height=(Math.random()*10+6)+'px';
+      c.style.borderRadius=Math.random()>0.5?'50%':'2px';
+      c.style.animationDuration=(Math.random()*2+2)+'s';
+      document.body.appendChild(c);
+      setTimeout(()=>c.remove(),4000);
+    },i*40);
   }
+}
+
+function gOpenReview() {
+  const letters=['A','B','C','D'];
+  document.getElementById('g-review-content').innerHTML=gAnswers.map((ua,i)=>{
+    const chosen=ua.chosen===-1?'No answer (time out)':`${letters[ua.chosen]}: ${ua.q.opts[ua.chosen]}`;
+    const correct=`${letters[ua.q.ans]}: ${ua.q.opts[ua.q.ans]}`;
+    return `<div class="greview-item">
+      <div class="greview-q">${i+1}. ${ua.q.q}</div>
+      <div class="greview-your ${ua.correct?'gok':'gbad'}">${ua.correct?'✅':'❌'} Your answer: ${chosen}</div>
+      ${!ua.correct?`<div class="greview-correct">✔️ Correct: ${correct}</div>`:''}
+      <div class="greview-explain">💡 ${ua.q.exp}</div>
+    </div>`;
+  }).join('');
+  document.getElementById('g-modal').className='gmodal-bg gopen';
+}
+function gCloseReview(){document.getElementById('g-modal').className='gmodal-bg';}
+function gRestart(){gShowScreen('gstart');}
+
+function gShowScreen(id) {
+  document.querySelectorAll('.gscreen').forEach(s=>s.classList.remove('active'));
+  const el=document.getElementById(id);
+  el.classList.remove('active'); void el.offsetWidth; el.classList.add('active');
+}
+
+function gCreateParticles() {
+  const container=document.getElementById('gameParticles');
+  if(!container)return;
+  const colors=['#5BAED6','#E87EA1','#F9D77E','#7BC8A4','#C3A8D1'];
+  const emojis=['⭐','🌸','✦','💫','🌟'];
+  for(let i=0;i<18;i++){
+    const p=document.createElement('div');
+    if(Math.random()>0.6){
+      p.textContent=emojis[Math.floor(Math.random()*emojis.length)];
+      p.style.cssText=`position:absolute;left:${Math.random()*100}%;font-size:${Math.random()*14+10}px;animation:gParticleDrift ${Math.random()*12+10}s ${Math.random()*-15}s linear infinite;opacity:0.4;`;
+    } else {
+      p.className='game-particle';
+      p.style.cssText=`left:${Math.random()*100}%;width:${Math.random()*10+4}px;height:${Math.random()*10+4}px;background:${colors[Math.floor(Math.random()*colors.length)]};animation-duration:${Math.random()*12+10}s;animation-delay:${Math.random()*-15}s;`;
+    }
+    container.appendChild(p);
+  }
+}
 </script>
 </body>
 </html>
+
 
 
 
