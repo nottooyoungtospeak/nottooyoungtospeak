@@ -482,8 +482,10 @@
     @media (max-width: 500px) {
       .values-grid, .content-list { grid-template-columns: 1fr; }
       .gresult-stats { grid-template-columns: 1fr; }
-.anchor-design{
+a{
        text-decoration: none;
        color: inherit;
        cursor: pointer;
+
 }
+
